@@ -64,6 +64,23 @@ body {
 	bottom: 54px;
 	padding: 0px 30px;
 }
+#home_page_area .login_signup_button a.signup_btn {
+  font-family: var(--font_manrope);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  border: 1px solid #BF2EF0;
+  padding: 13.5px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #BF2EF0;
+  transition: all 0.3s ease;
+}
 #home_page_area .login_signup_button_two a.signup_btn {
   font-family: var(--font_manrope);
   font-weight: 600;
@@ -83,6 +100,24 @@ body {
 }
 #home_page_area .login_signup_button_two a.signup_btn img{
   margin-right: 16px;
+}
+#home_page_area .login_signup_button a.login_btn {
+  font-family: var(--font_manrope);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF; /* চাইলে #EE9F07 ও দিতে পারো */
+  display: block;
+  text-align: center;
+  border: 1px solid #EE9F07;
+  padding: 13.5px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #EE9F07;
+  transition: all 0.3s ease;
+  margin-top: 16px;
 }
 #home_page_area .login_signup_button_two a.login_btn {
   font-family: var(--font_manrope);
