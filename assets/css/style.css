@@ -1,0 +1,176 @@
+/* ====== Google font Family Here  */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* ====== Common Css Here  */
+:root {
+  /* Colors  */
+  --black_color: #05000e;
+  --white_color: #ffffff;
+  /* Font  */
+  --font_manrope: "Manrope", sans-serif;
+}
+body {
+  background-color: var(--black_color);
+}
+
+/* ====================  */
+/* 01 SIgn up or Log in Page Css Here  */
+/* ====================  */
+#home_page_area {
+  background-color: var(--black_color);
+}
+#home_page_area .home_page_bg {
+  background-image: url(../img/signup_login/01_login_signup_img.png);
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: var(--black_color);
+}
+#home_page_area .logo {
+  margin-top: 74px;
+}
+#home_page_area .logo p {
+  font-family: var(--font_manrope);
+  color: var(--white_color);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  margin-top: 5px;
+}
+#home_page_area .image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%; /* নিচ থেকে কতটা অংশে overlay যাবে */
+  background: linear-gradient(
+    179.15deg,
+    rgba(0, 0, 0, 0) 18.76%,
+    #05000e 104.02%
+  );
+  pointer-events: none; /* যেন overlay ক্লিক ব্লক না করে */
+}
+#home_page_area .login_signup_button {
+	position: absolute;
+	bottom: 77px;
+	padding: 0px 30px;
+}
+#home_page_area .login_signup_button_two {
+	position: absolute;
+	bottom: 54px;
+	padding: 0px 30px;
+}
+#home_page_area .login_signup_button_two a.signup_btn {
+  font-family: var(--font_manrope);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  border: 1px solid #07C3FF;
+  padding: 13.5px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #07C3FF;
+  transition: all 0.3s ease;
+}
+#home_page_area .login_signup_button_two a.signup_btn img{
+  margin-right: 16px;
+}
+#home_page_area .login_signup_button_two a.login_btn {
+  font-family: var(--font_manrope);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF; /* চাইলে #EE9F07 ও দিতে পারো */
+  display: block;
+  text-align: center;
+  border: 1px solid #EE0707;
+  padding: 13.5px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #EE0707;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+#home_page_area .login_signup_button_two a.login_btn img{
+margin-right: 16px;
+}
+#home_page_area .login_signup_button_two span{
+font-family: var(--font_manrope);
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+text-align: center;
+padding-top: 20px;
+color: var(--white_color);
+}
+#home_page_area .home_page_bg_two {
+  background-image: url(../img/signup_login/01_login_signup_img.png);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: var(--black_color);
+}
+#home_page_area .email_facebook_btn{
+margin-top: 21px;
+}
+#home_page_area .email_facebook_btn .mail_button {
+	padding: 15px 17px;
+	background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
+	border-radius: 16px;
+	box-shadow: 0px 0px 6.2px 0px #DD3BF7;
+    border: 1px solid #DD3BF7;
+    margin-right: 15px;
+}
+#home_page_area .email_facebook_btn .mail_button img{
+    width: 20px;
+}
+#home_page_area .email_facebook_btn .facebook_button{
+	padding: 15px 17px;
+	background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
+	border-radius: 16px;
+	box-shadow: 0px 0px 6.2px 0px #0075FF;
+    border: 1px solid #0075FF;
+    margin-left: 15px;
+}
+#home_page_area .email_facebook_btn .facebook_button img{
+	width: 20px;
+}
+.home-indicator {
+  width: 100px;
+  height: 4px;
+  background-color: var(--white_color);
+  border-radius: 10px;
+  margin: 0px auto;
+  position: fixed;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.sign_up_text{
+font-family: var(--font_manrope);
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: -2%;
+color: var(--white_color);
+margin-bottom: 30px;
+}
+
+
+
