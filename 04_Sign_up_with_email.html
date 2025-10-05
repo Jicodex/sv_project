@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>01 SIgn up or Log in</title>
+    <title>SIgn Up With Email</title>
     <!-- ========== All Css Link  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -19,26 +19,17 @@
                 <a class="back_btn" href="02_SIgn_up_and_Log_In.html"
                   ><img src="assets/img/icons/arrow-left.svg" alt="icons"
                 /></a>
-                <h3>Phone Number</h3>
-                <h5>Please Enter Your Phone Number</h5>
+                <h3 style="color: transparent;">|</h3>
+                <h5 style="color: transparent;">|</h5>
                 <form action="#" method="post">
-                  <div class="input-box">
-                    <select id="country-code">
-                      <option value="+1" data-flag="🇺🇸">🇺🇸 +1 (USA)</option>
-                      <option value="+44" data-flag="🇬🇧">🇬🇧 +44 (UK)</option>
-                      <option value="+61" data-flag="🇦🇺">
-                        🇦🇺 +61 (Australia)
-                      </option>
-                      <option value="+91" data-flag="🇮🇳">🇮🇳 +91 (India)</option>
-                      <option value="+880" data-flag="🇧🇩">
-                        🇧🇩 +880 (Bangladesh)
-                      </option>
-                      <option value="+81" data-flag="🇯🇵">🇯🇵 +81 (Japan)</option>
-                    </select>
+                  <div class="input-box input_box_for_mail">
+                    <div class="gmail_dot_com">
+                        @gmail.com
+                    </div>
                     <input
                       type="text"
                       id="phone-input"
-                      placeholder="Enter number"
+                      placeholder=""
                     />
                   </div>
                   <p>
@@ -54,27 +45,7 @@
         <div class="image-overlay"></div>
       </div>
     </section>
-    <!-- js only for this page - tel input  -->
-    <script>
-      const select = document.getElementById("country-code");
-      const input = document.getElementById("phone-input");
-
-      function updateCode() {
-        const selectedCode = select.value;
-        if (!input.value.startsWith(selectedCode)) {
-          input.value = selectedCode + " ";
-        }
-      }
-
-      select.addEventListener("change", updateCode);
-
-      input.addEventListener("focus", () => {
-        const code = select.value;
-        if (!input.value.startsWith(code)) {
-          input.value = code + " ";
-        }
-      });
-    </script>
+   
 
     <!-- ========== All JS Link  -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>

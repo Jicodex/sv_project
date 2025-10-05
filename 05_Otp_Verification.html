@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Code </title>
+    <!-- ========== All Css Link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section id="home_page_area">
+      <div class="home_page_bg input_bg_blur">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="login_sighup_input">
+                <!-- ===back button  -->
+                <a class="back_btn" href="02_SIgn_up_and_Log_In.html">
+                  <img src="assets/img/icons/arrow-left.svg" alt="icons" />
+                </a>
+                <h3>OTP Verification</h3>
+                <h5>A 6 digit code has been sent to your Phone Number</h5>
+                <form action="#" method="post">
+                  <div
+                    class="otp_input_area d-flex justify-content-center"
+                  >
+                    <input
+                      type="text"
+                      maxlength="1"
+                      inputmode="numeric"
+                      class="otp-field form-control text-center"
+                    />
+                    <input
+                      type="text"
+                      maxlength="1"
+                      inputmode="numeric"
+                      class="otp-field form-control text-center"
+                    />
+                    <input
+                      type="text"
+                      maxlength="1"
+                      inputmode="numeric"
+                      class="otp-field form-control text-center"
+                    />
+                    <input
+                      type="text"
+                      maxlength="1"
+                      inputmode="numeric"
+                      class="otp-field form-control text-center"
+                    />
+                    <input
+                      type="text"
+                      maxlength="1"
+                      inputmode="numeric"
+                      class="otp-field form-control text-center"
+                    />
+                    <input
+                      type="text"
+                      maxlength="1"
+                      inputmode="numeric"
+                      class="otp-field form-control text-center"
+                    />
+                  </div>
+
+                  <!-- Hidden input for combined OTP -->
+                  <input type="hidden" name="otp" id="combinedOtp" />
+
+                  <p class="mt-3 text-end"><a href="#">Resend OTP</a></p>
+                  <button type="submit" class="submit_button">Verify</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-overlay"></div>
+      </div>
+    </section>
+
+    <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- ✅ OTP JS Functionality -->
+    <script>
+      const otpFields = document.querySelectorAll('.otp-field');
+  const otpForm = document.getElementById('otpForm');
+  const combinedOtp = document.getElementById('combinedOtp');
+
+  // Auto-focus next field
+  otpFields.forEach((field, index) => {
+    field.addEventListener('input', () => {
+      if (field.value.length === 1 && index < otpFields.length - 1) {
+        otpFields[index + 1].focus();
+      }
+    });
+
+    field.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace' && field.value === '' && index > 0) {
+        otpFields[index - 1].focus();
+      }
+    });
+  });
+
+  // Form submit: combine all OTP inputs
+  otpForm.addEventListener('submit', (e) => {
+    const otpValue = Array.from(otpFields).map(input => input.value).join('');
+    combinedOtp.value = otpValue;
+  });
+    </script>
+
+    <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
