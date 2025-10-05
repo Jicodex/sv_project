@@ -27,6 +27,8 @@ body {
   background-size: cover;
   position: relative;
   background-color: var(--black_color);
+  position: relative;
+  z-index: 1;
 }
 #home_page_area .logo {
   margin-top: 74px;
@@ -46,23 +48,23 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60%; /* নিচ থেকে কতটা অংশে overlay যাবে */
+  height: 60%; 
   background: linear-gradient(
     179.15deg,
     rgba(0, 0, 0, 0) 18.76%,
     #05000e 104.02%
   );
-  pointer-events: none; /* যেন overlay ক্লিক ব্লক না করে */
+  pointer-events: none; 
 }
 #home_page_area .login_signup_button {
-	position: absolute;
-	bottom: 77px;
-	padding: 0px 30px;
+  position: absolute;
+  bottom: 77px;
+  padding: 0px 30px;
 }
 #home_page_area .login_signup_button_two {
-	position: absolute;
-	bottom: 54px;
-	padding: 0px 30px;
+  position: absolute;
+  bottom: 54px;
+  padding: 0px 30px;
 }
 #home_page_area .login_signup_button a.signup_btn {
   font-family: var(--font_manrope);
@@ -70,15 +72,15 @@ body {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   text-align: center;
-  border: 1px solid #BF2EF0;
+  border: 1px solid #bf2ef0;
   padding: 13.5px 25px;
   text-decoration: none;
   border-radius: 8px;
-  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
-  box-shadow: 0px 0px 6.2px 0px #BF2EF0;
+  background: linear-gradient(5.03deg, #05000e -52.7%, #342a42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #bf2ef0;
   transition: all 0.3s ease;
 }
 #home_page_area .login_signup_button_two a.signup_btn {
@@ -87,18 +89,18 @@ body {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
   text-align: center;
-  border: 1px solid #07C3FF;
+  border: 1px solid #07c3ff;
   padding: 13.5px 25px;
   text-decoration: none;
   border-radius: 8px;
-  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
-  box-shadow: 0px 0px 6.2px 0px #07C3FF;
+  background: linear-gradient(5.03deg, #05000e -52.7%, #342a42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #07c3ff;
   transition: all 0.3s ease;
 }
-#home_page_area .login_signup_button_two a.signup_btn img{
+#home_page_area .login_signup_button_two a.signup_btn img {
   margin-right: 16px;
 }
 #home_page_area .login_signup_button a.login_btn {
@@ -107,15 +109,15 @@ body {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #FFFFFF; /* চাইলে #EE9F07 ও দিতে পারো */
+  color: #ffffff; /* চাইলে #EE9F07 ও দিতে পারো */
   display: block;
   text-align: center;
-  border: 1px solid #EE9F07;
+  border: 1px solid #ee9f07;
   padding: 13.5px 25px;
   text-decoration: none;
   border-radius: 8px;
-  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
-  box-shadow: 0px 0px 6.2px 0px #EE9F07;
+  background: linear-gradient(5.03deg, #05000e -52.7%, #342a42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #ee9f07;
   transition: all 0.3s ease;
   margin-top: 16px;
 }
@@ -125,30 +127,30 @@ body {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #FFFFFF; /* চাইলে #EE9F07 ও দিতে পারো */
+  color: #ffffff; /* চাইলে #EE9F07 ও দিতে পারো */
   display: block;
   text-align: center;
-  border: 1px solid #EE0707;
+  border: 1px solid #ee0707;
   padding: 13.5px 25px;
   text-decoration: none;
   border-radius: 8px;
-  background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
-  box-shadow: 0px 0px 6.2px 0px #EE0707;
+  background: linear-gradient(5.03deg, #05000e -52.7%, #342a42 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #ee0707;
   transition: all 0.3s ease;
   margin-top: 16px;
   margin-bottom: 18px;
 }
-#home_page_area .login_signup_button_two a.login_btn img{
-margin-right: 16px;
+#home_page_area .login_signup_button_two a.login_btn img {
+  margin-right: 16px;
 }
-#home_page_area .login_signup_button_two span{
-font-family: var(--font_manrope);
-font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-text-align: center;
-padding-top: 20px;
-color: var(--white_color);
+#home_page_area .login_signup_button_two span {
+  font-family: var(--font_manrope);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: var(--white_color);
 }
 #home_page_area .home_page_bg_two {
   background-image: url(../img/signup_login/01_login_signup_img.png);
@@ -159,30 +161,30 @@ color: var(--white_color);
   position: relative;
   background-color: var(--black_color);
 }
-#home_page_area .email_facebook_btn{
-margin-top: 21px;
+#home_page_area .email_facebook_btn {
+  margin-top: 21px;
 }
 #home_page_area .email_facebook_btn .mail_button {
-	padding: 15px 17px;
-	background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
-	border-radius: 16px;
-	box-shadow: 0px 0px 6.2px 0px #DD3BF7;
-    border: 1px solid #DD3BF7;
-    margin-right: 15px;
+  padding: 15px 17px;
+  background: linear-gradient(5.03deg, #05000e -52.7%, #342a42 163.3%);
+  border-radius: 16px;
+  box-shadow: 0px 0px 6.2px 0px #dd3bf7;
+  border: 1px solid #dd3bf7;
+  margin-right: 15px;
 }
-#home_page_area .email_facebook_btn .mail_button img{
-    width: 20px;
+#home_page_area .email_facebook_btn .mail_button img {
+  width: 20px;
 }
-#home_page_area .email_facebook_btn .facebook_button{
-	padding: 15px 17px;
-	background: linear-gradient(5.03deg, #05000E -52.7%, #342A42 163.3%);
-	border-radius: 16px;
-	box-shadow: 0px 0px 6.2px 0px #0075FF;
-    border: 1px solid #0075FF;
-    margin-left: 15px;
+#home_page_area .email_facebook_btn .facebook_button {
+  padding: 15px 17px;
+  background: linear-gradient(5.03deg, #05000e -52.7%, #342a42 163.3%);
+  border-radius: 16px;
+  box-shadow: 0px 0px 6.2px 0px #0075ff;
+  border: 1px solid #0075ff;
+  margin-left: 15px;
 }
-#home_page_area .email_facebook_btn .facebook_button img{
-	width: 20px;
+#home_page_area .email_facebook_btn .facebook_button img {
+  width: 20px;
 }
 .home-indicator {
   width: 100px;
@@ -196,16 +198,133 @@ margin-top: 21px;
   right: 0;
   z-index: 9999;
 }
-.sign_up_text{
-font-family: var(--font_manrope);
-font-weight: 700;
-font-style: Bold;
-font-size: 20px;
-line-height: 100%;
-letter-spacing: -2%;
-color: var(--white_color);
-margin-bottom: 30px;
+.sign_up_text {
+  font-family: var(--font_manrope);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: var(--white_color);
+  margin-bottom: 30px;
 }
 
-
-
+.login_sighup_input .input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #05000e57;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+}
+.login_sighup_input select {
+	background: transparent;
+	color: white;
+	border: none;
+	outline: none;
+	margin-right: 8px;
+	font-size: 16px;
+	appearance: none;
+	cursor: pointer;
+	width: 50px;
+	position: absolute;
+	color: transparent;
+}
+.login_sighup_input select option {
+  background: #141414;
+  color: white;
+  font-size: 14px;
+}
+.login_sighup_input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  flex: 1;
+}
+.login_sighup_input {
+  margin: 32px 22px 0 22px;
+  position: relative;
+  z-index: 9999;
+}
+.login_sighup_input h3 {
+  font-family: var(--font_manrope);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  color: var(--white_color);
+  margin-top: 19px;
+}
+.login_sighup_input h5 {
+  font-family: var(--font_manrope);
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: -2%;
+  color: #ADB3C9;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login_sighup_input p {
+font-family: var(--font_manrope);
+font-weight: 500;
+font-style: Medium;
+font-size: 10px;
+line-height: 100%;
+letter-spacing: -2%; 
+color: var(--white_color);
+margin-top: 10px;
+}
+.login_sighup_input p a{
+font-family: var(--font_manrope);
+font-weight: 500;
+font-style: Medium;
+font-size: 10px;
+line-height: 100%;
+letter-spacing: -2%; 
+color: var(--white_color);
+margin-top: 10px;
+text-decoration: none;
+}
+.login_sighup_input .back_btn img {
+  padding: 8px;
+  background-color: #1a1d1f;
+  border-radius: 7px;
+  border: 1px solid #2d3335;
+}
+.submit_button{
+  font-family: var(--font_manrope);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  border: 1px solid #FF06C8;
+  padding: 13.5px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(5.03deg, #FF06C866 -52.7%, #FF06C81A 163.3%);
+  box-shadow: 0px 0px 6.2px 0px #bf2ef0;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+#home_page_area .input_bg_blur::before {
+  content: "";
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  background-image: url(../img/signup_login/01_login_signup_img.png); /* same image */
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: blur(10px) brightness(0.6) saturate(1.05);
+  transform: scale(1.0);   
+  z-index: 0;
+  pointer-events: none;
+}

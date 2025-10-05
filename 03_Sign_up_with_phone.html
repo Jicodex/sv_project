@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 SIgn up or Log in</title>
+    <!-- ========== All Css Link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Css Only for this page  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <section id="home_page_area">
+      <div class="home_page_bg input_bg_blur">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="login_sighup_input">
+                <!-- ===back button  -->
+                <a class="back_btn" href="02_SIgn_up_and_Log_In.html"
+                  ><img src="assets/img/icons/arrow-left.svg" alt="icons"
+                /></a>
+                <h3>Phone Number</h3>
+                <h5>Please Enter Your Phone Number</h5>
+                <form action="#" method="post">
+                  <div class="input-box">
+                    <select id="country-code">
+                      <option value="+1" data-flag="🇺🇸">🇺🇸 +1 (USA)</option>
+                      <option value="+44" data-flag="🇬🇧">🇬🇧 +44 (UK)</option>
+                      <option value="+61" data-flag="🇦🇺">
+                        🇦🇺 +61 (Australia)
+                      </option>
+                      <option value="+91" data-flag="🇮🇳">🇮🇳 +91 (India)</option>
+                      <option value="+880" data-flag="🇧🇩">
+                        🇧🇩 +880 (Bangladesh)
+                      </option>
+                      <option value="+81" data-flag="🇯🇵">🇯🇵 +81 (Japan)</option>
+                    </select>
+                    <input
+                      type="text"
+                      id="phone-input"
+                      placeholder="Enter number"
+                    />
+                  </div>
+                  <p>
+                    By entering a Phone number, You agree to <a href="#">Our Terms of
+                    service</a> and <a href="#">Privavy policy</a>
+                  </p>
+                  <button type="submit" href="02_SIgn_up_and_Log_In.html" class="submit_button">Send OTP</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-overlay"></div>
+      </div>
+    </section>
+    <!-- js only for this page - tel input  -->
+    <script>
+      const select = document.getElementById("country-code");
+      const input = document.getElementById("phone-input");
+
+      function updateCode() {
+        const selectedCode = select.value;
+        if (!input.value.startsWith(selectedCode)) {
+          input.value = selectedCode + " ";
+        }
+      }
+
+      select.addEventListener("change", updateCode);
+
+      input.addEventListener("focus", () => {
+        const code = select.value;
+        if (!input.value.startsWith(code)) {
+          input.value = code + " ";
+        }
+      });
+    </script>
+
+    <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
