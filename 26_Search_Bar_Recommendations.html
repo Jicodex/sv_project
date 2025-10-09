@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>26 Search Bar Recommendations</title>
+    <!-- ========== All Css Link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="position-relative" style="background-color: #111315">
+    <section id="backtoheader" class="position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-4">
+            <div class="d-flex justify-content-between top_back_title_menu">
+              <div class="d-flex">
+                <a href="#"
+                  ><img
+                    class="top_img"
+                    src="assets/img/icons/back.svg"
+                    alt="back"
+                /></a>
+              </div>
+              <div class="d-flex">
+                <div class="search_form_to">
+                  <form action="#" method="post">
+                    <div class="search-bar">
+                      <i class="fas fa-search search-icon"></i>
+                      <input type="text" placeholder="Search with a keyword" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="search_retult">
+      <div class="container mt-4">
+        <!-- Tabs Navigation -->
+        <!-- Tab Navigation with Horizontal Scroll -->
+        <div class="scrolling-tabs-wrapper mb-4">
+          <ul class="nav nav-tabs flex-nowrap" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all"
+                type="button"
+                role="tab"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="users-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#users"
+                type="button"
+                role="tab"
+              >
+                Users
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="shops-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#shops"
+                type="button"
+                role="tab"
+              >
+                Shops
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="community-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#community"
+                type="button"
+                role="tab"
+              >
+                Community
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="posts-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#posts"
+                type="button"
+                role="tab"
+              >
+                Posts
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="live-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#live"
+                type="button"
+                role="tab"
+              >
+                Live
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="myTabContent">
+          <!-- All -->
+          <div class="tab-pane fade show active" id="all" role="tabpanel">
+            <!-- ======== Users Card Start -->
+            <div class="search_users_card">
+              <h6>Users ></h6>
+              <div class="card-custom">
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_user"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img">
+                        Aegon
+                        <img
+                          src="assets/img/icons/gander_link.svg"
+                          alt="icon"
+                        />
+                      </div>
+                      <small class="for_username_img">@theConqueror</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_user"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img">
+                        Aegon
+                        <img src="assets/img/icons/famale.svg" alt="icon" />
+                      </div>
+                      <small class="for_username_img">@theConqueror</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_user"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img">
+                        Aegon
+                        <img
+                          src="assets/img/icons/gander_link.svg"
+                          alt="icon"
+                        />
+                      </div>
+                      <small class="for_username_img">@theConqueror</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Users Card End -->
+
+            <!-- ======== Shop Card Start -->
+            <div class="search_users_card shops_card">
+              <h6>Shops ></h6>
+              <div class="card-custom">
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_shop"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img pt-2">Marvelous</div>
+                      <div class="d-flex shops_user_name">
+                        <div class="owner">
+                          <p>Owner</p>
+                        </div>
+                        <div class="d-flex align-items-center marginnai">
+                          <img
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="profile-img"
+                          />
+                          <div>
+                            <div class="for_user_name_img">
+                              Aegon
+                              <img
+                                src="assets/img/icons/gander_link.svg"
+                                alt="icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_shop"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img pt-2">Marvelous</div>
+                      <div class="d-flex shops_user_name">
+                        <div class="owner">
+                          <p>Owner</p>
+                        </div>
+                        <div class="d-flex align-items-center marginnai">
+                          <img
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="profile-img"
+                          />
+                          <div>
+                            <div class="for_user_name_img">
+                              Aegon
+                              <img
+                                src="assets/img/icons/gander_link.svg"
+                                alt="icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div><div
+                  class="d-flex justify-content-between align-items-center my-2 for_shop"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img pt-2">Marvelous</div>
+                      <div class="d-flex shops_user_name">
+                        <div class="owner">
+                          <p>Owner</p>
+                        </div>
+                        <div class="d-flex align-items-center marginnai">
+                          <img
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="profile-img"
+                          />
+                          <div>
+                            <div class="for_user_name_img">
+                              Aegon
+                              <img
+                                src="assets/img/icons/gander_link.svg"
+                                alt="icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Shop Card End -->
+            <!-- ======== Community Card Start -->
+             <div class="search_users_card community_card">
+              <h6>Community ></h6>
+              <div class="card-custom">
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_community"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="community_name">Anime Group</div>
+                      <p class="langu">English</p>
+                      <div class="d-fle">
+                        <div class="d-flex">
+                            <div class="member_pic position-relative">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="first_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="secend_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="three_img">
+                            </div>
+                        </div>
+                        <div class="total_members">12 Members</div>
+                      </div>
+                      <div class="d-flex community_tags">
+                        <div class="tags">
+                          <p style="background: #50EAFF26; border: 1px solid #00F0FFBF ;">##univversocraft</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #F40000 ;">#Owner</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #585D0C ;">#Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_community"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="community_name">Anime Group</div>
+                      <p class="langu">English</p>
+                      <div class="d-fle">
+                        <div class="d-flex">
+                            <div class="member_pic position-relative">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="first_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="secend_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="three_img">
+                            </div>
+                        </div>
+                        <div class="total_members">12 Members</div>
+                      </div>
+                      <div class="d-flex community_tags">
+                        <div class="tags">
+                          <p style="background: #50EAFF26; border: 1px solid #00F0FFBF ;">##univversocraft</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #F40000 ;">#Owner</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #585D0C ;">#Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_community"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="community_name">Anime Group</div>
+                      <p class="langu">English</p>
+                      <div class="d-fle">
+                        <div class="d-flex">
+                            <div class="member_pic position-relative">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="first_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="secend_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="three_img">
+                            </div>
+                        </div>
+                        <div class="total_members">12 Members</div>
+                      </div>
+                      <div class="d-flex community_tags">
+                        <div class="tags">
+                          <p style="background: #50EAFF26; border: 1px solid #00F0FFBF ;">##univversocraft</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #F40000 ;">#Owner</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #585D0C ;">#Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Community Card End -->
+            <!-- ======== Post Card Start -->
+             <div class="search_users_card post_search_card">
+              <h6>Post ></h6>
+              <div class="card-custom">
+                <div class="tweet-card">
+                    <div class="tweet-header">
+                      <img src="https://i.pravatar.cc/60?img=12" alt="user" class="avatar">
+                      <div class="tweet-user">
+                        <h4>
+                          Hitachi BlackSoul <br>
+                          <span class="username">@hitachi</span>
+                        </h4>
+                      </div>
+                      <a href="#" class="follow-btn">Follow</a>
+                      <button class="more-btn">⋯</button>
+                    </div>
+
+                    <p class="tweet-text">
+                      Lorem ipsum dolor sit amet consectetur. Feugiat lacus
+                      aliquam sapien eget placerat.
+                    </p>
+
+                    <div class="tweet-images">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                      <img src="assets/img/splash/splash_02.png" alt="">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                    </div>
+
+                    <div class="tweet-actions">
+                      <button class="like-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button><i class="fa-regular fa-comment"></i></button>
+                      <button><i class="fa-solid fa-share"></i></button>
+                    </div>
+                  </div>
+                  <div class="tweet-card">
+                    <div class="tweet-header">
+                      <img src="https://i.pravatar.cc/60?img=12" alt="user" class="avatar">
+                      <div class="tweet-user">
+                        <h4>
+                          Hitachi BlackSoul <br>
+                          <span class="username">@hitachi</span>
+                        </h4>
+                      </div>
+                      <a href="#" class="follow-btn">Follow</a>
+                      <button class="more-btn">⋯</button>
+                    </div>
+
+                    <p class="tweet-text">
+                      Lorem ipsum dolor sit amet consectetur. Feugiat lacus
+                      aliquam sapien eget placerat.
+                    </p>
+
+                    <!-- <div class="tweet-images">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                      <img src="assets/img/splash/splash_02.png" alt="">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                    </div> -->
+
+                    <div class="tweet-actions">
+                      <button class="like-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button><i class="fa-regular fa-comment"></i></button>
+                      <button><i class="fa-solid fa-share"></i></button>
+                    </div>
+                  </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Post Card End -->
+
+          </div>
+
+          <!-- Users -->
+          <div class="tab-pane fade" id="users" role="tabpanel">
+            <!-- ======== Users Card Start -->
+            <div class="search_users_card">
+              <h6>Users ></h6>
+              <div class="card-custom">
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_user"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img">
+                        Aegon
+                        <img
+                          src="assets/img/icons/gander_link.svg"
+                          alt="icon"
+                        />
+                      </div>
+                      <small class="for_username_img">@theConqueror</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_user"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img">
+                        Aegon
+                        <img src="assets/img/icons/famale.svg" alt="icon" />
+                      </div>
+                      <small class="for_username_img">@theConqueror</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_user"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img">
+                        Aegon
+                        <img
+                          src="assets/img/icons/gander_link.svg"
+                          alt="icon"
+                        />
+                      </div>
+                      <small class="for_username_img">@theConqueror</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Users Card End -->
+          </div>
+
+          <!-- Shops -->
+          <div class="tab-pane fade" id="shops" role="tabpanel">
+            <!-- ======== Shop Card Start -->
+            <div class="search_users_card shops_card">
+              <h6>Shops ></h6>
+              <div class="card-custom">
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_shop"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img pt-2">Marvelous</div>
+                      <div class="d-flex shops_user_name">
+                        <div class="owner">
+                          <p>Owner</p>
+                        </div>
+                        <div class="d-flex align-items-center marginnai">
+                          <img
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="profile-img"
+                          />
+                          <div>
+                            <div class="for_user_name_img">
+                              Aegon
+                              <img
+                                src="assets/img/icons/gander_link.svg"
+                                alt="icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_shop"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img pt-2">Marvelous</div>
+                      <div class="d-flex shops_user_name">
+                        <div class="owner">
+                          <p>Owner</p>
+                        </div>
+                        <div class="d-flex align-items-center marginnai">
+                          <img
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="profile-img"
+                          />
+                          <div>
+                            <div class="for_user_name_img">
+                              Aegon
+                              <img
+                                src="assets/img/icons/gander_link.svg"
+                                alt="icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div><div
+                  class="d-flex justify-content-between align-items-center my-2 for_shop"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="for_user_name_img pt-2">Marvelous</div>
+                      <div class="d-flex shops_user_name">
+                        <div class="owner">
+                          <p>Owner</p>
+                        </div>
+                        <div class="d-flex align-items-center marginnai">
+                          <img
+                            src="https://i.pravatar.cc/40?img=1"
+                            class="profile-img"
+                          />
+                          <div>
+                            <div class="for_user_name_img">
+                              Aegon
+                              <img
+                                src="assets/img/icons/gander_link.svg"
+                                alt="icon"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-visit">Visit</button>
+                </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Shop Card End -->
+          </div>
+
+          <!-- Other Tabs -->
+          <div class="tab-pane fade" id="community" role="tabpanel">
+           <!-- ======== Community Card Start -->
+             <div class="search_users_card community_card">
+              <h6>Community ></h6>
+              <div class="card-custom">
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_community"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="community_name">Anime Group</div>
+                      <p class="langu">English</p>
+                      <div class="d-fle">
+                        <div class="d-flex">
+                            <div class="member_pic position-relative">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="first_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="secend_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="three_img">
+                            </div>
+                        </div>
+                        <div class="total_members">12 Members</div>
+                      </div>
+                      <div class="d-flex community_tags">
+                        <div class="tags">
+                          <p style="background: #50EAFF26; border: 1px solid #00F0FFBF ;">##univversocraft</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #F40000 ;">#Owner</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #585D0C ;">#Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_community"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="community_name">Anime Group</div>
+                      <p class="langu">English</p>
+                      <div class="d-fle">
+                        <div class="d-flex">
+                            <div class="member_pic position-relative">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="first_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="secend_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="three_img">
+                            </div>
+                        </div>
+                        <div class="total_members">12 Members</div>
+                      </div>
+                      <div class="d-flex community_tags">
+                        <div class="tags">
+                          <p style="background: #50EAFF26; border: 1px solid #00F0FFBF ;">##univversocraft</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #F40000 ;">#Owner</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #585D0C ;">#Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center my-2 for_community"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://i.pravatar.cc/40?img=1"
+                      class="profile-img"
+                    />
+                    <div>
+                      <div class="community_name">Anime Group</div>
+                      <p class="langu">English</p>
+                      <div class="d-fle">
+                        <div class="d-flex">
+                            <div class="member_pic position-relative">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="first_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="secend_img">
+                                <img src="assets/img/profile_slide/profile.jpg" alt="img" class="three_img">
+                            </div>
+                        </div>
+                        <div class="total_members">12 Members</div>
+                      </div>
+                      <div class="d-flex community_tags">
+                        <div class="tags">
+                          <p style="background: #50EAFF26; border: 1px solid #00F0FFBF ;">##univversocraft</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #F40000 ;">#Owner</p>
+                        </div>
+                        <div class="tags">
+                          <p style="background: #F400001A; border: 1px solid #585D0C ;">#Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Community Card End -->
+          </div>
+          <div class="tab-pane fade" id="posts" role="tabpanel">
+           <!-- ======== Post Card Start -->
+             <div class="search_users_card post_search_card">
+              <h6>Post ></h6>
+              <div class="card-custom">
+                <div class="tweet-card">
+                    <div class="tweet-header">
+                      <img src="https://i.pravatar.cc/60?img=12" alt="user" class="avatar">
+                      <div class="tweet-user">
+                        <h4>
+                          Hitachi BlackSoul <br>
+                          <span class="username">@hitachi</span>
+                        </h4>
+                      </div>
+                      <a href="#" class="follow-btn">Follow</a>
+                      <button class="more-btn">⋯</button>
+                    </div>
+
+                    <p class="tweet-text">
+                      Lorem ipsum dolor sit amet consectetur. Feugiat lacus
+                      aliquam sapien eget placerat.
+                    </p>
+
+                    <div class="tweet-images">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                      <img src="assets/img/splash/splash_02.png" alt="">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                    </div>
+
+                    <div class="tweet-actions">
+                      <button class="like-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button><i class="fa-regular fa-comment"></i></button>
+                      <button><i class="fa-solid fa-share"></i></button>
+                    </div>
+                  </div>
+                  <div class="tweet-card">
+                    <div class="tweet-header">
+                      <img src="https://i.pravatar.cc/60?img=12" alt="user" class="avatar">
+                      <div class="tweet-user">
+                        <h4>
+                          Hitachi BlackSoul <br>
+                          <span class="username">@hitachi</span>
+                        </h4>
+                      </div>
+                      <a href="#" class="follow-btn">Follow</a>
+                      <button class="more-btn">⋯</button>
+                    </div>
+
+                    <p class="tweet-text">
+                      Lorem ipsum dolor sit amet consectetur. Feugiat lacus
+                      aliquam sapien eget placerat.
+                    </p>
+
+                    <!-- <div class="tweet-images">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                      <img src="assets/img/splash/splash_02.png" alt="">
+                      <img src="assets/img/splash/splash_01.png" alt="">
+                    </div> -->
+
+                    <div class="tweet-actions">
+                      <button class="like-btn">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button><i class="fa-regular fa-comment"></i></button>
+                      <button><i class="fa-solid fa-share"></i></button>
+                    </div>
+                  </div>
+                <span class="view-more">View more ></span>
+              </div>
+            </div>
+            <!-- ======== Post Card End -->
+          </div>
+          <div class="tab-pane fade" id="live" role="tabpanel">
+            <p>Live content here...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<script>
+ const fab = document.querySelector(".flot_add_btn");
+    const overlay = document.querySelector(".overlay");
+    const sheet = document.querySelector(".bottom-sheet");
+
+    fab.addEventListener("click", () => {
+      sheet.classList.add("active");
+      overlay.style.display = "block";
+    });
+
+    overlay.addEventListener("click", () => {
+      sheet.classList.remove("active");
+      overlay.style.display = "none";
+    });
+
+
+
+      const likeButtons = document.querySelectorAll(".like-btn");
+
+      likeButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("active");
+        });
+      });
+    </script>
+    <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

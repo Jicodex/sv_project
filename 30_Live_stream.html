@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Live stream</title>
+    <!-- ========== All Css Link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="position-relative" style="background-color: #111315">
+    <section id="live_run_page">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="tweet-header">
+              <img
+                src="https://i.pravatar.cc/60?img=12"
+                alt="user"
+                class="avatar"
+              />
+              <div class="tweet-user">
+                <h4>
+                  Im in Live!<br />
+                  <span class="username">@hitachi</span>
+                </h4>
+              </div>
+              <a href="#" class="live_follower_link">Follow</a>
+            </div>
+            <div class="d-flex watch_box_count">
+              <img src="assets/img/icons/eya.svg" alt="icons" />
+              <span>13.2 k</span>
+            </div>
+
+            <div class="live_comment_react">
+              <div class="live_container">
+                <div class="chat_messages" id="chat_messages">
+                  <div class="chat_msg d-flex">
+                    <img src="assets/img/profile_slide/profile.jpg" alt="img" class="live_comment_pic">
+                    <div class="live_comments">
+                        <span>@Hitachi Jones:</span>
+                        <p>Keep going! ❤️</p>
+                    </div>
+                  </div>
+                  <div class="chat_msg d-flex">
+                    <img src="assets/img/profile_slide/profile.jpg" alt="img" class="live_comment_pic">
+                    <div class="live_comments">
+                        <span>@Hitachi Jones:</span>
+                        <p>Keep going! ❤️</p>
+                    </div>
+                  </div>
+                  <div class="chat_msg d-flex">
+                    <img src="assets/img/profile_slide/profile.jpg" alt="img" class="live_comment_pic">
+                    <div class="live_comments">
+                        <span>@Hitachi Jones:</span>
+                        <p>Keep going! ❤️</p>
+                    </div>
+                  </div>
+                  <div class="chat_msg doller_comment d-flex">
+                    <img src="assets/img/profile_slide/profile.jpg" alt="img" class="live_comment_pic">
+                    <div class="live_comments_doller">
+                        <div class="d-flex">
+                            <img src="assets/img/icons/doller.svg" alt="doller">
+                            <span>7</span>
+                        </div>
+                        <p>Great Job, Keep Going  😍</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chat_form_area mt-2">
+                  <input
+                    type="text"
+                    placeholder="Type a message"
+                    id="chat_input"
+                  />
+                  <button id="send_btn">
+                    <img src="assets/img/icons/sent.svg" alt="icons" />
+                  </button>
+                </div>
+
+                <button class="more_button" id="jx_more_btn">
+                  <img src="assets/img/icons/live_more_btn.svg" alt="icons" />
+                </button>
+                <button class="heart_button" id="heart_btn">
+                  <img src="assets/img/icons/love_react.svg" alt="icons" />
+                </button>
+              </div>
+            </div>
+            <div class="live_bottom_overlay"></div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/img/profile_slide/live_view.png"
+        alt="img"
+        class="vide0_img"
+      />
+    </section>
+
+ <!-- Overlay -->
+  <div class="jx_more_overlay" id="jx_more_overlay" aria-hidden="true"></div>
+
+  <!-- Bottom sheet -->
+  <div class="jx_more_sheet" id="jx_more_sheet" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="jx_more_handle" aria-hidden="true"></div>
+
+    <ul class="jx_more_list" id="jx_more_list">
+      <li class="jx_more_item" data-action="request-call">
+        <img src="assets/img/icons/video_call.svg" alt="icon">
+        <span>Request a Call</span>
+      </li>
+
+      <li class="jx_more_item" data-action="donate">
+        <img src="assets/img/icons/donate.svg" alt="icon">
+        <span>Donate</span>
+      </li>
+
+      <li class="jx_more_item" data-action="quality">
+        <img src="assets/img/icons/quality.svg" alt="icon">
+        <span>Quality</span>
+        <span class="jx_more_subtext">Auto</span>
+      </li>
+
+      <li class="jx_more_item" data-action="share">
+        <img src="assets/img/icons/share_live.svg" alt="icon">
+        <span>Share Streaming</span>
+      </li>
+
+      <li class="jx_more_item" data-action="report">
+        <img src="assets/img/icons/maik.svg" alt="icon">
+        <span>Report</span>
+      </li>
+    </ul>
+
+    <div class="jx_more_divider" role="separator" aria-hidden="true"></div>
+
+    <button type="button" class="jx_more_cancel" id="jx_more_cancel">Cancel</button>
+  </div>
+
+    <script>
+(function () {
+      const btn = document.getElementById('jx_more_btn');
+      const overlay = document.getElementById('jx_more_overlay');
+      const sheet = document.getElementById('jx_more_sheet');
+      const cancel = document.getElementById('jx_more_cancel');
+
+      // show function
+      function jx_showSheet() {
+        overlay.classList.add('jx-show');
+        sheet.classList.add('jx-show');
+        overlay.setAttribute('aria-hidden', 'false');
+        sheet.setAttribute('aria-hidden', 'false');
+        // prevent body scroll when open
+        document.body.style.overflow = 'hidden';
+      }
+
+      // hide function
+      function jx_hideSheet() {
+        overlay.classList.remove('jx-show');
+        sheet.classList.remove('jx-show');
+        overlay.setAttribute('aria-hidden', 'true');
+        sheet.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      // open on more button click
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        jx_showSheet();
+      });
+
+      // close when clicking overlay
+      overlay.addEventListener('click', function () {
+        jx_hideSheet();
+      });
+
+      // close via Cancel button
+      cancel.addEventListener('click', function () {
+        jx_hideSheet();
+      });
+
+      // close on ESC key
+      document.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Escape') jx_hideSheet();
+      });
+
+      // Example: handle menu item clicks (customize as needed)
+      document.getElementById('jx_more_list').addEventListener('click', function (ev) {
+        const item = ev.target.closest('.jx_more_item');
+        if (!item) return;
+        const action = item.getAttribute('data-action');
+        // Close sheet after action
+        jx_hideSheet();
+        // basic example actions
+        switch (action) {
+          case 'request-call': alert('Request a Call clicked'); break;
+          case 'donate': alert('Donate clicked'); break;
+          case 'quality': alert('Quality settings'); break;
+          case 'share': alert('Share streaming'); break;
+          case 'report': alert('Report clicked'); break;
+          default: break;
+        }
+      });
+
+    })();
+
+    const heartBtn = document.getElementById('heart_btn');
+    const container = document.querySelector('.live_container');
+
+    heartBtn.addEventListener('click', () => {
+      for (let i = 0; i < 5; i++) {
+        const heart = document.createElement('i');
+        heart.classList.add('fa-solid', 'fa-heart', 'floating_heart');
+        heart.style.left = (heartBtn.offsetLeft - 10 + Math.random() * 60) + 'px';
+        heart.style.bottom = '60px';
+        heart.style.animationDelay = (i * 0.1) + 's';
+        container.appendChild(heart);
+        setTimeout(() => heart.remove(), 2000);
+      }
+    });
+
+    // Optional: send message
+    document.getElementById('send_btn').addEventListener('click', () => {
+      const msg = document.getElementById('chat_input').value.trim();
+      if (msg) {
+        const msgDiv = document.createElement('div');
+        msgDiv.classList.add('chat_msg');
+        msgDiv.innerHTML = `<img src="assets/img/profile_slide/profile.jpg" alt="img" class="live_comment_pic">
+                    <div class="live_comments">
+                        <span>@Hitachi Jones:</span>
+                        <p>${msg}</p>
+                    </div> `;
+        document.getElementById('chat_messages').appendChild(msgDiv);
+        document.getElementById('chat_input').value = '';
+      }
+    });
+
+
+    
+  </script>
+    <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

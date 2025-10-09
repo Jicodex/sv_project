@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash 03</title>
+    <!-- ========== All Css Link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <section id="splash_area_section">
+      <div class="splash_banner_img position-relative">
+        <img width="100%" src="assets/img/splash/splash_banner.png" alt="img" />
+        <div class="splash_overlay_one"></div>
+        <div class="splash_overlay_top"></div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="splash_three_title text-center">
+              <h3>What are you interested in?</h3>
+              <p>Pick 5 to enjoy personalized experience</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="interestForm">
+          <div class="row">
+            <!-- Repeatable Cards -->
+            <div class="col-4">
+              <div class="splash_card text-center" data-value="Anime">
+                <img src="assets/img/splash/card_img_01.jpg" alt="img" />
+                <p>Anime</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="splash_card text-center" data-value="Music">
+                <img src="assets/img/splash/card_img_01.jpg" alt="img" />
+                <p>Music</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="splash_card text-center" data-value="Movies">
+                <img src="assets/img/splash/card_img_01.jpg" alt="img" />
+                <p>Movies</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="splash_card text-center" data-value="Games">
+                <img src="assets/img/splash/card_img_01.jpg" alt="img" />
+                <p>Games</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="splash_card text-center" data-value="Sports">
+                <img src="assets/img/splash/card_img_01.jpg" alt="img" />
+                <p>Sports</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="splash_card text-center" data-value="Technology">
+                <img src="assets/img/splash/card_img_01.jpg" alt="img" />
+                <p>Technology</p>
+              </div>
+            </div>
+
+            <div class="splash_dot mt-3 mb-3">
+              <ul>
+                <li></li>
+                <li></li>
+                <li class="active"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-lg-12">
+              <button type="submit" class="next_btn w-100">Next</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Card click toggle
+        $(".splash_card").on("click", function () {
+          $(this).toggleClass("selected");
+        });
+
+        // Form submit
+        $("#interestForm").on("submit", function (e) {
+          e.preventDefault();
+          let selectedValues = [];
+          $(".splash_card.selected").each(function () {
+            selectedValues.push($(this).data("value"));
+          });
+
+          if (selectedValues.length === 0) {
+            alert("Please select at least one interest!");
+            return;
+          }
+
+          console.log("Selected interests:", selectedValues);
+          alert("Selected: " + selectedValues.join(", "));
+        });
+      });
+    </script>
+
+
+        <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

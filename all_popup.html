@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>25 Home</title>
+    <!-- ========== All Css Link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="position-relative" style="background-color: #111315">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mt-5">
+          <!-- ========== Status Edit bottom side / popup start -->
+          <!-- Show Button -->
+          <button class="btn btn-info status_edit_popup_btn">
+            Show Status Edit Popup
+          </button>
+
+          <!-- Popup Background -->
+          <div class="status_edit_popup_overlay"></div>
+
+          <!-- Popup Box -->
+          <div class="status_edit_popup_box">
+            <h3 class="status_edit_popup_title">EDIT YOUR STATUS</h3>
+
+            <div class="status_edit_popup_section">
+              <div class="d-flex justify-content-between lebel_img">
+                <label class="status_edit_popup_label">Status</label>
+                <img src="assets/img/icons/edit_icon.svg" alt="icon" />
+              </div>
+              <div class="status_edit_popup_grid">
+                <button class="status_edit_popup_option active">
+                  <img src="assets/img/status_edit/dot.png" alt="w" /> Online
+                </button>
+                <button class="status_edit_popup_option">
+                  <img src="assets/img/status_edit/dot.png" alt="w" />Offline
+                </button>
+                <button class="status_edit_popup_option">
+                  <img src="assets/img/status_edit/run.png" alt="w" />Running
+                </button>
+                <button class="status_edit_popup_option">
+                  <img src="assets/img/status_edit/love.png" alt="w" />Single
+                </button>
+                <button class="status_edit_popup_option">
+                  <img src="assets/img/status_edit/live.png" alt="w" />Watching
+                  Movies
+                </button>
+                <button class="status_edit_popup_option">
+                  <img src="assets/img/status_edit/sad.png" alt="w" />Depressed
+                </button>
+                <button class="status_edit_popup_option">
+                  <img src="assets/img/status_edit/dis.png" alt="w" />Do Not
+                  Disturb
+                </button>
+                <button class="status_edit_popup_option">
+                  <img src="assets/img/status_edit/fight.png" alt="w" />In
+                  Vacation
+                </button>
+              </div>
+            </div>
+
+            <div class="status_edit_popup_section">
+              <div class="d-flex justify-content-between lebel_img">
+                <label class="status_edit_popup_label"
+                  >Do Not Disturb Duration</label
+                >
+                <img src="assets/img/icons/edit_icon.svg" alt="icon" />
+              </div>
+              <div class="status_edit_popup_duration">
+                <button>15 mins</button>
+                <button>30 mins</button>
+                <button>1 hour</button>
+                <button>2 hours</button>
+                <button>1 day</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========== Status Edit bottom side / popup End  -->
+
+          <!-- ========== 27 Attention pop up bottom side / popup Start  -->
+          <!-- Trigger Button -->
+          <button class="popup-trigger-btn-x99" onclick="showRewardPopupX99()">
+            Show Reward Popup
+          </button>
+
+          <!-- Overlay -->
+          <div
+            class="popup-overlay-x99"
+            id="popupOverlayX99"
+            onclick="closeRewardPopupX99()"
+          >
+        <div class="popup-close-btn-x99" onclick="closeRewardPopupX99()"><img src="assets/img/icons/close_cricle.svg" alt="icons"></div>
+        </div>
+
+          <!-- Popup -->
+          <div class="reward-popup-x99" id="rewardPopupX99">
+            <!-- Decorative Icons -->
+            <img
+              src="assets/img/effects/reword_bg_effect.svg"
+              alt=""
+              class="popup-icon-x99"
+            />
+
+            <h3 class="reward-title-x99">Earn Rewards ! <span>🎁</span></h3>
+            <p class="reward-description-x99">
+              Learn and finish the task, you will get chance to win amazing
+              Rewards
+            </p>
+
+            <button class="reward-button-x99">Get Rewards →</button>
+          </div>
+          <!-- Close Button -->
+
+          <!-- ========== 27 Attention pop up bottom side / popup End  -->
+        </div>
+      </div>
+    </div>
+    <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
