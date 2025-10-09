@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>37 Explore</title>
+    <!-- ========== All Css Link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="position-relative" style="background-color: #111315">
+    <section id="backtoheader" class="position-relative duisotocol h-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-4">
+            <div class="d-flex justify-content-between top_back_title_menu">
+              <div class="d-flex">
+                <a href="#"
+                  ><img
+                    class="top_img"
+                    src="assets/img/icons/back.svg"
+                    alt="back"
+                /></a>
+                <p class="page_name">Categories</p>
+              </div>
+              <div class="d-flex"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="category_search_icons">
+      <div class="container">
+        <!-- Search -->
+        <div class="mb-4">
+          <div class="input-group community_search_group">
+            <span class="input-group-text bg-transparent border-0 text-muted">
+              <img src="assets/img/icons/search-normal.svg" alt="icons" />
+            </span>
+            <input
+              type="text"
+              id="community_search_input"
+              class="form-control community_search_input"
+              placeholder="Search community.."
+            />
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="row g-3 text-center" id="community_category_list">
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/role_play.svg" alt="icons" />
+            <p>Role Play</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/animate.svg" alt="icons" />
+            <p>Anime & Manga</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/art.svg" alt="icons" />
+            <p>Art & Aesthetics</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/fandom.svg" alt="icons" />
+            <p>Fandom</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/music.svg" alt="icons" />
+            <p>Animals & Pets</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/music.svg" alt="icons" />
+            <p>Music</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/movie.svg" alt="icons" />
+            <p>Movies</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/entertentment.svg" alt="icons" />
+            <p>Entertainment</p>
+          </div>
+        </div>
+
+        <!-- Hidden Categories -->
+        <div class="row g-3 text-center d-none" id="community_more_category">
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/role_play.svg" alt="icons" />
+            <p>Gaming</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/animate.svg" alt="icons" />
+            <p>News</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/art.svg" alt="icons" />
+            <p>Books</p>
+          </div>
+          <div class="col-3 community_icon_wrapper">
+            <img src="assets/img/icons/fandom.svg" alt="icons" />
+            <p>Lifestyle</p>
+          </div>
+        </div>
+
+        <!-- View More Button -->
+        <!-- <button class="community_viewmore_btn" id="community_viewmore_btn"></button> -->
+        <button
+          class="signup_btn view_all_cate_btn w-100"
+          id="community_viewmore_btn"
+        >
+          View more ↓
+        </button>
+      </div>
+    </section>
+    <section id="explore_tab">
+      <div class="container">
+        <div class="col-lg-12">
+          <div class="scoil_feed">
+            <div class="custom-tabs-wrapper">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="for-you-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#for-you"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                  >
+                    Recommended
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="following-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#following"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Popular
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="community-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#community"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    latest
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade active show"
+                id="for-you"
+                role="tabpanel"
+              >
+                <!-- For You Content -->
+                <div
+                  class="card-custom"
+                  style="background-color: transparent; padding-top: 0px"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="following" role="tabpanel">
+                <div
+                  class="card-custom"
+                  style="background-color: transparent; padding-top: 0px"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="community" role="tabpanel">
+                <div
+                  class="card-custom"
+                  style="background-color: transparent; padding-top: 0px"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2 for_community border-0"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.pravatar.cc/40?img=1"
+                        class="profile-img"
+                      />
+                      <div>
+                        <div class="community_name">Anime Group</div>
+                        <p class="langu">English</p>
+                        <div class="d-fle">
+                          <div class="d-flex">
+                            <div class="member_pic position-relative">
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="first_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="secend_img"
+                              />
+                              <img
+                                src="assets/img/profile_slide/profile.jpg"
+                                alt="img"
+                                class="three_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="total_members">12 Members</div>
+                        </div>
+                        <div class="d-flex community_tags">
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #50eaff26;
+                                border: 1px solid #00f0ffbf;
+                              "
+                            >
+                              ##univversocraft
+                            </p>
+                          </div>
+                          <div class="tags">
+                            <p
+                              style="
+                                background: #f400001a;
+                                border: 1px solid #f40000;
+                              "
+                            >
+                              #Owner
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const btn = document.getElementById("community_viewmore_btn");
+      const moreList = document.getElementById("community_more_category");
+      let expanded = false;
+
+      btn.addEventListener("click", () => {
+        if (expanded) {
+          moreList.classList.add("d-none");
+          btn.innerText = "View more ↓";
+          expanded = false;
+        } else {
+          moreList.classList.remove("d-none");
+          btn.innerText = "View less ↑";
+          expanded = true;
+        }
+      });
+    </script>
+    <!-- ========== All JS Link  -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

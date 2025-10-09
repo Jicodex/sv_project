@@ -4065,3 +4065,330 @@ margin-bottom: 0px;
   overflow-x: auto;
   scrollbar-width: none;
 }
+
+.community_search_input {
+      font-family: var(--font_manrope);
+font-weight: 400;
+font-size: 12px;
+color: #FFFFFF66;
+background-color: transparent;
+border: none;
+padding: 0;
+    }
+    .community_search_group {
+      background-color: #1c1c1c;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid #2D3335;
+      padding: 8px 16px;
+    }
+    .community_icon_wrapper {
+      text-align: center;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: 0.3s;
+      margin-bottom: 12px;
+    }
+    .community_icon_wrapper:hover {
+      background-color: #2c2c2c00;
+    }
+.community_icon_wrapper img {
+	width: auto;
+	height: 20px;
+	margin-bottom: 6px;
+}
+#community_more_category{
+  margin-top: 12px;
+}
+    .community_icon_wrapper p {
+      font-family: var(--font_manrope);
+font-weight: 500;
+font-style: Medium;
+font-size: 10px;
+color: var(--white_color);
+margin-bottom: 0px;
+    }
+    .community_viewmore_btn {
+      background: none;
+      border: 2px solid #ff0080;
+      border-radius: 12px;
+      color: #ff0080;
+      padding: 10px 20px;
+      display: block;
+      margin: 25px auto 0;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .community_viewmore_btn:hover {
+      background: #ff0080;
+      color: #fff;
+    }
+#explore_tab .profile-img{
+	width: 68px;
+	height: 103px;
+	border-radius: 8px;
+	margin-right: 12px;
+}
+#explore_tab .d-fle {
+	background: #1A1D1F;
+	display: flex;
+	width: 150px;
+	padding: 6px 9px;
+	border-radius: 62px;
+	border: 1px solid #2D3335;
+	justify-content: start;
+	text-align: center;
+}
+#explore_tab .member_pic img.secend_img {
+	position: absolute;
+	left: 11px;
+	top: -3px;
+}
+#explore_tab .member_pic img.three_img {
+	position: absolute;
+	left: 22px;
+	top: -3px;
+}
+#explore_tab .member_pic img.first_img {
+	position: absolute;
+	left: 0;
+	top: -3px;
+}
+#explore_tab .for_community .total_members {
+	font-family: var(--font_manrope);
+	font-weight: 600;
+	font-size: 10px;
+	color: #ffffff;
+	position: relative;
+	left: 50px;
+	top: -1px;
+	width: 50%;
+}
+
+#communitY_grp_info1{
+  margin-top: -20px;
+}
+#communitY_grp_info1 .profile-img{
+	width: 96px;
+	height: 112px;
+	border-radius: 8px;
+	margin-right: 12px;
+}
+#communitY_grp_info1 .d-fle {
+	background: #1A1D1F;
+	display: flex;
+	width: 150px;
+	padding: 6px 9px;
+	border-radius: 62px;
+	border: 1px solid #2D3335;
+	justify-content: start;
+	text-align: center;
+}
+#communitY_grp_info1 .member_pic img.secend_img {
+	position: absolute;
+	left: 11px;
+	top: -3px;
+}
+#communitY_grp_info1 .member_pic img.three_img {
+	position: absolute;
+	left: 22px;
+	top: -3px;
+}
+#communitY_grp_info1 .member_pic img.first_img {
+	position: absolute;
+	left: 0;
+	top: -3px;
+}
+#communitY_grp_info1 .for_community .total_members {
+	font-family: var(--font_manrope);
+	font-weight: 600;
+	font-size: 10px;
+	color: #ffffff;
+	position: relative;
+	left: 50px;
+	top: -1px;
+	width: 50%;
+}
+.notification_anno{
+  background-color: #1A1D1F;
+  padding: 8px 16px;
+  border: 1px solid #2D3335;
+  border-radius: 30px;
+}
+.notification_anno p{
+  margin-bottom: 0px;
+  font-family: var(--font_manrope);
+font-weight: 400;
+font-size: 12px;
+color: #FFFFFF66;
+}
+.notification_anno img{
+width: 16px;
+margin-right: 8px;
+padding-top: 2px;
+}
+#community_info_one{
+  background-color: #0C0617;
+  border-radius: 30px 30px 0 0;
+  margin-top: 16px;
+  border-top: 1px solid #2D3335;
+}
+#community_info_one .nav-tabs .nav-link {
+	font-family: var(--font_manrope);
+	font-weight: 600;
+	font-size: 12px;
+	color: #ffffff;
+	background: transparent;
+	border: none;
+	border-radius: 12px;
+	padding: 6px 11px;
+	transition: all 0.3s ease;
+}
+#community_info_one .nav-tabs .nav-link.active {
+	background: rgba(147, 51, 234, 0.1);
+	color: #ffffff;
+	box-shadow: 0 0 0 2px #9333ea;
+}
+#community_info_one .scoil_feed {
+	margin-top: 16px;
+}
+#community_info_one .liveParties_section_uniq {
+	background: transparent;
+	border-radius: 20px;
+	color: #fff;
+	padding: 0px 6px;
+	margin-top: 18px;
+	border: 0px solid #2D3335;
+}
+.achi_card img{
+  width: 32px;
+  height: 32px;
+  border-radius: 30px;
+}
+.achi_card p{
+font-family: var(--font_manrope);
+font-weight: 500;
+font-size: 12px;
+color: var(--white_color);
+margin-bottom: 0px;
+margin-top: 6px;
+}
+.achi_card span {
+	font-family: var(--font_manrope);
+	font-weight: 500;
+	font-size: 8px;
+	color: #51FF62;
+	display: block;
+	width: 71px;
+}
+.scroll_kore_jabe{
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+
+.chat_message_wrapper {
+	background: transparent;
+	border-radius: 12px 8px 8px 0;
+	padding: 12px;
+	margin-bottom: 12px;
+	border: 1px solid #08FFE2;
+	position: relative;
+	display: inline-block;
+	/* min-width: 240px; */
+	margin-left: 32px;
+}
+    .chat_user_name {
+      font-family: var(--font_manrope);
+font-weight: 600;
+font-size: 10px;
+margin-bottom: 6px;
+
+    }
+    .chat_message_text {
+      font-family: var(--font_manrope);
+font-weight: 400;
+font-size: 12px;
+color: #FFFFFF;
+margin-bottom: 6px;
+    }
+    .chat_reply_btn {
+      font-size: 12px;
+      color: #bdbdbd;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 14px;
+    }
+    .chat_reply_btn:hover {
+      color: #fff;
+    }
+    .chat_time {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 6px;
+      text-align: right;
+    }
+    .chat_avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0px;   /* নিচে overlap */
+      left: -40px;     /* বাম পাশে overlap */
+      border: 2px solid #0f0f0f;
+    }
+    .chat_image {
+      max-width: 180px;
+      border-radius: 10px;
+      margin-top: 6px;
+    }
+.member-list {
+      margin: 10px 0px 6px 0px;
+    }
+
+    .member {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .member-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+   .member-left img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+    .member-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .member-info .name {
+      font-family: var(--font_manrope);
+font-weight: 500;
+font-size: 12px;
+color: #ffffff;
+    }
+
+    .member-info .status {
+font-family: var(--font_manrope);
+font-weight: 500;
+font-size: 8px;
+color: #1FDA00;
+    }
+
+    .role {
+font-family: var(--font_manrope);
+font-weight: 400;
+font-size: 10px;
+color: #AAB5D1;
+    }
